@@ -1,4 +1,4 @@
-name = ["Kevan", "Kavan", "Kevin", "Kavin", "Smevin", "Smevan", "Liam", "William", "Lliam", "Willliam", "Shovel", "Leo", "Leoo", "Leooo", "Leoooo", "Leeo", "Leeeo", "leeeeo", "Leeeeooooo", "Bartholomuew XIV Jr. Sr."]
+name = ["Kevan", "Kavan", "Kevin", "Kavin", "Smevin", "Roan", "Liam", "William", "Melissa", "Jake", "Shovel", "Leo", "Jack", "Caleb", "Grunkle Stan", "Jodie", "Jody", "gurt", "Jordan", "Bartholomuew XIV Jr. Sr."]
 hair = ["bald", "Mohawk", "Strawberry Fade", "Low taper fade", "Bowl cut", "Receding Hairline"]
 hair_color = ["Green", "Chromatic", "Rainbow", "Gold", "Yellow", "Hot bubble gum pink"]
 height = ["1'1","4,5", "6'7", "100'1", "0'11" ]
@@ -6,31 +6,43 @@ skin_color = ["Geen", "Bink", "Puorple," "Pitch black", "Neon White", "Paper", "
 clothes = ["t-shirt pants", "t-shirt shorts", "long sleeves short", "long sleeves pants", "Winter coat","skimask"]
 race = ["Elf", "omega alpha skibidi sigma", "dwarf", "ogre", "draconian", "human", "SUPER small dwarf"]
 characteristics = ["nice", "not nice", "funny", "rude", "arrogant", "ignorant", "caring", "loving", "shy","extroverted"]
-gender = ["male", "female", "Non-binary", "Trans man", "trans woman"]
+gender = ["male", "female", "Non-binary", "male", "female", "male", "female"]
 import random
 import time
-confirm = input("Do you want to generate an npc? : ")
-confirm_real = confirm.capitalize()
-if confirm_real == "Yes" :
-    print(random.choice(name))
+print("Welcome to the NPC generator!")
+print("You choose a number...and I will make that many amount of NPCs.")
+amount_random = int(input("Whats the amount of NPCs do you want? : "))
+
+
+
+for i in range(amount_random) : 
+
+    print("Name : ", random.choice(name))
     print("")
-    print(random.choice(hair))
+    time.sleep(0.75)
+    print("Hair cut : ", random.choice(hair))
     print("")
-    print(random.choice(hair_color))
+    time.sleep(0.75)
+    print("Hair color : ", random.choice(hair_color))
     print("")
-    print(random.choice(height))
+    time.sleep(0.75)
+    print("Height : ", random.choice(height))
     print("")
-    print(random.choice(skin_color))
+    time.sleep(0.75)
+    print("Skin color : ", random.choice(skin_color))
     print("")
-    print(random.choice(clothes))
+    time.sleep(0.75)
+    print("Clothing : ", random.choice(clothes))
     print("")
-    print(random.choice(race))
+    time.sleep(0.75)
+    print("Race : ", random.choice(race))
     print("")
-    print(random.choice(characteristics))
+    time.sleep(0.75)
+    print("Characteristics : ", random.choice(characteristics))
     print("")
-    print(random.choice(gender))
-else : 
-    print("aw man okay...")
+    time.sleep(0.75)
+    print("Gender : ", random.choice(gender))
+    print("")
 
 
 
