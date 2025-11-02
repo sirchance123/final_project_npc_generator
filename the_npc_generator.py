@@ -7,14 +7,15 @@ race = ["Elf", "omega alpha skibidi sigma", "dwarf", "ogre", "draconian", "human
 characteristics = ["nice", "not nice", "funny", "rude", "arrogant", "ignorant", "caring", "loving", "shy","extroverted"]
 gender = ["male", "female", "Non-binary", "male", "female", "male", "female"]
 age = [6.7, 41, 6.1, 1, 101, 54, 2]
+#these imports are the most important thing.  without them, randomly selecting things from lists would be 10x longer
 import random
 import time
 print("Welcome to the NPC generator!")
 print("You choose a number...and I will make that many amount of NPCs.")
 amount_random = int(input("Whats the amount of NPCs do you want? : "))
 random_age = random.choice(age)
-
-
+#the thing above me is responsible for determining the senile trait or not
+#and everything below me is the actual part that functions
 for i in range(amount_random) : 
 
     print("Name : ", random.choice(name))
@@ -52,7 +53,7 @@ for i in range(amount_random) :
     print("End of NPC")
     print("------------")
     random_age = random.choice(age)
-
+#the thing above me is what resets the age for the next npc.  normally you wouldnt need to do this, but I needed to cram a boolean somewhere in the project so I did this.
 
 
 
